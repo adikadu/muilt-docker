@@ -17,7 +17,7 @@ after_success:
     # Log in to docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # Take above built images and push to docker hub
-    - docker push adityakadu12/muilt-client
-    - docker push adityakadu12/muilt-nginx
-    - docker push adityakadu12/muilt-server
-    - docker push adityakadu12/muilt-worker
+    - docker push adityakadu12/multi-client
+    - docker push adityakadu12/multi-nginx
+    - docker push adityakadu12/multi-server
+    - docker push adityakadu12/multi-worker
