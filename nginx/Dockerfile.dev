@@ -1,0 +1,4 @@
+FROM nginx
+
+# defult.conf file inside nginx container get overwritten by our default.conf 
+COPY ./default.conf /etc/nginx/conf.d/default.conf
